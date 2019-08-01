@@ -2,10 +2,12 @@
     "description": "GFS Toast Polymer Component",
     "keywords": [
         "GFS",
-        "toast"
+        "toast",
+        "web-components",
+        "web-component"
     ],
     "name": "@gfsdeliver/gfs-toast",
-    "version": "1.0.0",
+    "version": "1.0.0-preview.1",
     "resolutions": {
         "inherits": "2.0.3",
         "samsam": "1.1.3",
@@ -18,7 +20,7 @@
     "dependencies": {
         "@polymer/polymer": "^3.0.0",
         "@polymer/iron-overlay-behavior": "^3.0.0",
-        "@gfsdeliver/gfs-styles": "^1.0.0"
+        "@gfsdeliver/gfs-styles": "^2.0.0-preview.1"
     },
     "devDependencies": {
         "@polymer/iron-component-page": "^4.0.0",
