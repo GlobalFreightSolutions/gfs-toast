@@ -7,7 +7,7 @@
         "web-component"
     ],
     "name": "@gfsdeliver/gfs-toast",
-    "version": "1.0.0-preview.1",
+    "version": "2.0.0-preview.1",
     "resolutions": {
         "inherits": "2.0.3",
         "samsam": "1.1.3",
