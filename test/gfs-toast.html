@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>gfs-listbox basic tests</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+        <script src="../node_modules/wct-browser-legacy/browser.js"></script>
+    </head>
+
+    <body>
+        <test-fixture id="basic">
+            <template>
+                <gfs-toast></gfs-toast>
+            </template>
+        </test-fixture>
+
+        <test-fixture id="show">
+            <template>
+                <gfs-toast opened></gfs-toast>
+            </template>
+        </test-fixture>
+
+        <script type="module">
+            import '../gfs-toast.js';
+
+            suite('gfs-toast', () => {
+                var toast;
+
+                test('is hidden', function() {
+                    toast = fixture('basic');
+                    assert.isFalse(toast.opened, '`opened` is false');
+                });
+
+                test('is visible', function () {
+                    toast = fixture('show');
+                    assert.isTrue(toast.opened, '`opened` is true');
+                });
+
+                test('show() will open toast', function () {
+                    toast = fixture('basic');
+                    toast.show();
+                    assert.isTrue(toast.opened, '`opened` is true');
+                });
+
+                test('hide() will close toast', function () {
+                    toast = fixture('show');
+                    toast.hide();
+                    assert.isFalse(toast.opened, '`opened` is false');
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -25,7 +25,7 @@ document.head.appendChild($_documentContainer.content);
 class GfsToast extends mixinBehaviors(IronOverlayBehavior, PolymerElement) {
     static get template() {
         return html`
-            <style include="gfs-styles">
+            <style>
                 :host {
                     min-height: 48px;
                     min-width: 300px;

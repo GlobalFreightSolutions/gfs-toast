@@ -1,6 +1,42 @@
 ## Introduction
 `gfs-toast` provides a subtle notification toast.
 
+### Install
+
+```bash
+$ npm i --save @gfsdeliver/gfs-toast
+```
+
+### Import In a HTML file:
+
+```html
+<html>
+    <head>
+        <script type="module">
+            import '@gfsdeliver/gfs-toast/gfs-toast.js';
+        </script>
+    </head>
+    <body>
+        <gfs-toast></gfs-toast>
+    </body>
+</html>
+```
+
+### In a Polymer 3 element
+```js
+import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import '@gfsdeliver/gfs-toast/gfs-toast.js';
+
+class CustomElement extends PolymerElement {
+    static get template() {
+        return html`
+            <gfs-toast></gfs-toast>
+        `;
+    }
+}
+customElements.define('custom-element', CustomElement);
+```
+
 
 ## Properties
 Name      | Description     | Default
